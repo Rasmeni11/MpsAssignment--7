@@ -14,5 +14,10 @@ namespace MpsAssignment_7
         {
             InitializeComponent();
         }
+
+        private void Frame_SizeChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
