@@ -13,37 +13,66 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Frame CornerRadius="50" Padding="0">
-            <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand" /> 
+
+        <Frame CornerRadius="30" Padding="0" BackgroundColor="#1B701E">
+            <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" Margin="0,0,0,0" VerticalOptions="StartAndExpand" /> 
+
         </Frame>
+        <StackLayout>
+            <ImageButton x:Name="logo" Source="logo.png" InputTransparent="True" HorizontalOptions="CenterAndExpand" VerticalOptions="" />
+        </StackLayout>
         
-        <StackLayout Orientation="Vertical" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
-            <Button Text="Menu" TextColor="White" BackgroundColor="DarkGreen"  WidthRequest="100" HeightRequest="100" BorderRadius="50" Padding="0" FontSize="Large"  Font="20" />
+        <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
+            <Button Text="Menu" TextColor="White" BackgroundColor="DarkGreen" FontFamily="header"  WidthRequest="100" HeightRequest="100" BorderRadius="50" Padding="0" FontSize="Large"  Font="30" />
+            
         </StackLayout>
         
         <StackLayout Padding="0" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="100" HeightRequest="100">
             <Frame CornerRadius="50" Padding="0" >
                 <ImageButton x:Name="proPic" Source="proPicMenu.png" InputTransparent="True" HorizontalOptions="Center" VerticalOptions="End" />
+               
+
             </Frame>
+            
         </StackLayout>
+              <Image Source="happyMeal.png" Grid.Row="1"  Aspect="Fill" HeightRequest="200" Margin="0,0,0,0" VerticalOptions="Center" />
 
-        <StackLayout Grid.Row="1" Padding="4" Spacing="50" IsClippedToBounds="True" >
-            <Image Source="happyMeal.png"  Aspect="Fill" HeightRequest="200" Margin="20,50" VerticalOptions="StartAndExpand" />
+              <Image Source="rundMEAL.png"  Grid.Row="2" Aspect="Fill" HeightRequest="200" Margin="0,0,0,0" VerticalOptions="Center" />
+
+              <Image Source="visMeal.png"  Grid.Row="3" Aspect="Fill" HeightRequest="200" Margin="0,0,0,0" VerticalOptions="Center" />
+
+              <Image Source="kids.png"  Grid.Row="4" Aspect="Fill" HeightRequest="200" Margin="0,0,0,0" VerticalOptions="Center" />
+        <StackLayout Grid.Row="5" Margin="0,0,0,0" BackgroundColor="WhiteSmoke">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand" >
+                    <ImageButton Source="startButton.png" HeightRequest="80" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand" >
+                    <ImageButton  Source="couponButton.png" HeightRequest="80" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand" >
+                    <ImageButton  Source="restaurantsButton.png" HeightRequest="80" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand" >
+                    <ImageButton  Source="menu2Button.png" HeightRequest="80" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="4" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand" >
+                    <ImageButton  Source="meerButton.png" HeightRequest="80" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </Grid>
         </StackLayout>
-        
-        <StackLayout Grid.Row="2" Padding="4" Spacing="50" >
-            <Image Source="rundMEAL.png"  Aspect="Fill" HeightRequest="200" Margin="20,50" VerticalOptions="StartAndExpand" />
-        </StackLayout>
-
-        <StackLayout Grid.Row="3" Padding="4" Spacing="50" IsClippedToBounds="True" >
-            <Image Source="visMeal.png"  Aspect="Fill" HeightRequest="200" Margin="20,50" VerticalOptions="StartAndExpand" />
-        </StackLayout>
-
-        <StackLayout Grid.Row="4" Padding="4" Spacing="50" >
-            <Image Source="kids.png"  Aspect="Fill" HeightRequest="200" Margin="20,50" VerticalOptions="StartAndExpand" />
-        </StackLayout>
-
-
 
     </Grid>
 
