@@ -133,4 +133,40 @@
       <Name>MpsAssignment-7</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\startButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\visMeal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\couponButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\happyMeal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\kids.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\meerButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menu2Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menuButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\proPicMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\restaurantsButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\rundMEAL.png" />
+  </ItemGroup>
 </Project>
