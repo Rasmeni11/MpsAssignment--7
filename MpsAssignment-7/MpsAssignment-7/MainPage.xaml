@@ -14,20 +14,19 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Frame CornerRadius="30" Padding="0" BackgroundColor="#1B701E">
-            <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" Margin="0,0,0,0" VerticalOptions="StartAndExpand" /> 
-
+        <Frame CornerRadius="30" Padding="20" BackgroundColor="#1B701E">
+           
         </Frame>
         <StackLayout>
-            <ImageButton x:Name="logo" Source="logo.png" InputTransparent="True" HorizontalOptions="CenterAndExpand" VerticalOptions="" />
+            <Image x:Name="logo" Source="mcdonaldslogo.png"  InputTransparent="True" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
         </StackLayout>
         
         <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
-            <Button Text="Menu" TextColor="White" BackgroundColor="DarkGreen" FontFamily="header"  WidthRequest="100" HeightRequest="100" BorderRadius="50" Padding="0" FontSize="Large"  Font="30" />
+            <Button Text="Menu" TextColor="White" BackgroundColor="#1B701E" FontFamily="header"  WidthRequest="100" HeightRequest="100" BorderRadius="50" Padding="0" FontSize="Large"  Font="30" />
             
         </StackLayout>
-        
-        <StackLayout Padding="0" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="100" HeightRequest="100">
+
+        <StackLayout Padding="0" BackgroundColor="#1B701E" HorizontalOptions="End" VerticalOptions="Center" WidthRequest="100" HeightRequest="100">
             <Frame CornerRadius="50" Padding="0" >
                 <ImageButton x:Name="proPic" Source="proPicMenu.png" InputTransparent="True" HorizontalOptions="Center" VerticalOptions="End" />
                
@@ -35,13 +34,14 @@
             </Frame>
             
         </StackLayout>
-              <Image Source="happyMeal.png" Grid.Row="1"  Aspect="Fill" HeightRequest="200" Margin="0,0,0,0" VerticalOptions="Center" />
+        <ImageButton Source="happyMeal.png" Grid.Row="1" Aspect="Fill" HeightRequest="200" Margin="20,0,0,20" HorizontalOptions="CenterAndExpand"  VerticalOptions="Center" />
 
-              <Image Source="rundMEAL.png"  Grid.Row="2" Aspect="Fill" HeightRequest="200" Margin="0,0,0,0" VerticalOptions="Center" />
+        <ImageButton Source="rundMEAL.png"  Grid.Row="2" Aspect="Fill" HeightRequest="200" Margin="20,0,0,20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
 
-              <Image Source="visMeal.png"  Grid.Row="3" Aspect="Fill" HeightRequest="200" Margin="0,0,0,0" VerticalOptions="Center" />
+        <ImageButton Source="visMeal.png"  Grid.Row="3" Aspect="Fill" HeightRequest="200" Margin="20,0,0,20"  HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
 
-              <Image Source="kids.png"  Grid.Row="4" Aspect="Fill" HeightRequest="200" Margin="0,0,0,0" VerticalOptions="Center" />
+        <ImageButton Source="kids.png"  Grid.Row="4" Aspect="Fill" HeightRequest="200" Margin="20,0,0,20"  HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+        
         <StackLayout Grid.Row="5" Margin="0,0,0,0" BackgroundColor="WhiteSmoke">
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
                 <Grid.ColumnDefinitions>
