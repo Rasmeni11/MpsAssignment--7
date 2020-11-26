@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MpsAssignment_7.MainPage"
              BackgroundColor="white">
-    
+    <ScrollView>
     <Grid VerticalOptions="FillAndExpand">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -22,7 +22,7 @@
         </StackLayout>
         
         <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
-            <Button Text="Menu" TextColor="White" BackgroundColor="#1B701E" FontFamily="header"  WidthRequest="100" HeightRequest="100" BorderRadius="50" Padding="0" FontSize="Large"  Font="30" />
+            <Button x:Name="menu_Button" Clicked="menu_Button_Clicked" Text="Menu" TextColor="White" BackgroundColor="#1B701E" FontFamily="header"  WidthRequest="100" HeightRequest="100" BorderRadius="50" Padding="0" FontSize="Large"  Font="30" />
             
         </StackLayout>
 
@@ -75,6 +75,6 @@
         </StackLayout>
 
     </Grid>
-
+    </ScrollView>
 </ContentPage>  
   
